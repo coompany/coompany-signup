@@ -27,6 +27,8 @@ var jsFilesToInject = [
   // are brought in here
   'js/dependencies/jquery/*.js',
   'js/dependencies/angular/angular.js',
+  'js/dependencies/angular-bootstrap/ui-bootstrap.js',
+  'js/dependencies/angular-bootstrap/ui-bootstrap-tpls.js',
   'js/dependencies/**/*.js',
 
   // All of the rest of your client-side js files

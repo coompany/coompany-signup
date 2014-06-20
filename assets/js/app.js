@@ -5,7 +5,7 @@
  *
  * @type {angular.Module}
  */
-var app = angular.module('coompanySignup', ['ngRoute', 'ngResource']);
+var app = angular.module('coompanySignup', ['ngRoute', 'ngResource', 'ui.bootstrap']);
 
 app.config(function ($routeProvider) {
   $routeProvider
