@@ -8,23 +8,23 @@
         <button ng-click="restart()" class="btn btn-block btn-lg btn-success">Ricomincia <span class="glyphicon glyphicon-refresh"></span></button>
       </div>
       <form name="signupform" ng-hide="hideForm" ng-submit="submit()" class="form-horizontal">
-        <div class="form-group" ng-class="{'has-error': signupform.name.$invalid}">
+        <div class="form-group">
           <label class="col-sm-3 control-label" for="signup-name">Nome: <span class="text-danger">*</span></label>
           <div class="col-sm-9">
-            <input ng-model="user.name" name="name" required class="form-control" type="text" id="signup-name" placeholder="Nome">
+            <input ng-class="{'has-error': signupform.name.$invalid}" ng-model="user.name" name="name" required class="form-control" type="text" id="signup-name" placeholder="Nome">
           </div>
         </div>
-        <div class="form-group" ng-class="{'has-error': signupform.email.$invalid}">
+        <div class="form-group">
           <label class="col-sm-3 control-label" for="signup-email">E-mail: <span class="text-danger">*</span></label>
           <div class="col-sm-9">
-            <input ng-model="user.email" name="email" required class="form-control" type="email" id="signup-email" placeholder="E-mail">
+            <input ng-class="{'has-error': signupform.email.$invalid}" ng-model="user.email" name="email" required class="form-control" type="email" id="signup-email" placeholder="E-mail">
           </div>
         </div>
-        <div class="form-group" ng-class="{'has-error': signupform.privacy.$invalid}">
+        <div class="form-group">
           <div class="col-sm-3">&nbsp;</div>
           <div class="col-sm-9">
             <div class="checkbox">
-              <label>
+              <label ng-class="{'has-error': signupform.privacy.$invalid}">
                 <input ng-model="privacy" name="privacy" required type="checkbox" id="signup-privacy" value="">
                 <span class="text-danger">*</span> Autorizzo il trattamento dei miei dati personali, ai sensi del D.lgs. 196 del 30 giugno 2003
               </label>
