@@ -12,7 +12,7 @@ angular.module('coompanySignup')
        Subscription.save($scope.user,
          function(user) {
            console.log('user', user);
-           $scope.addAlert('success', 'Complementi, ti sei iscritto con successo!');
+           $scope.addAlert('success', 'Complimenti, ti sei iscritto con successo!');
            $scope.hideForm = true;
          },
          function(err) {
